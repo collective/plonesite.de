@@ -1,0 +1,7 @@
+<layers>
+ <layer
+     name="bgp.HeaderImageViewlet"
+     interface="bgp.HeaderImageViewlet.browser.interfaces.IHeaderImageProductLayer"
+     />
+</layers>
+

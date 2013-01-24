@@ -1,0 +1,237 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+body {
+	background-color: #ffffff;
+	background-image: url(&dtml-portal_url;/background-footer.png);
+	background-repeat: repeat-x;
+	background-position: 0 bottom;
+	border-top: 11px solid #329FD7;
+	}
+
+#visual-portal-wrapper {
+	width: 60em;
+	margin: 0 auto;
+	}
+
+#portal-searchbox { margin-top: 2.5em; }
+
+input.searchField { -moz-appearance: none; }
+input.searchField {
+    background: url("http://plone.org/search.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #6E6F71;
+    height: 26px;
+    padding-left: 15px;
+    width: 213px !important;
+    }
+    
+.searchButton { display: none; }
+.searchSection { display: none; }
+
+#portal-globalnav {
+	background-image: url(&dtml-portal_url;/background-navigation.png);
+	background-repeat: repeat-x;
+	background-position: 0 bottom;
+	background-color: transparent;
+    border-color: #DEDEDE #DEDEDE #A3A3A3;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0.5em 0 2.5em 0;
+    }
+
+#portal-globalnav li a,
+#portal-globalnav li a:visited {
+    border-right: 1px solid #C5C5C5;
+    color: #646464;
+    font-weight: bold;
+    padding: 0.9em 1em;
+    white-space: nowrap;
+    background: none;
+    min-width: 0;
+    }
+
+#portal-globalnav li.selected a,
+#portal-globalnav li.selected a:hover {
+	background: none;
+	color: #75AD0A;
+	}
+
+#portal-globalnav li a:hover {
+	background: none;
+	color: #75AD0A;
+	}
+
+#portal-banner {
+	width: 695px;
+	height: 200px;
+	overflow: hidden;
+	margin-bottom: 1em;
+	}
+
+.scrollable {
+	position: relative;
+	overflow: hidden;
+	width: 695px;
+	height: 200px;
+	}
+
+.scrollable .items {
+	width: 20000em;
+	position: absolute;
+	}
+
+#ablteaser { margin-bottom: 1em; }
+
+.items .teaser { float: left; }
+
+.teaser {
+	width: 695px;
+	height: 200px;
+	}
+
+.teaserImage { position: absolute; }
+
+.teaserText-black,
+.teaserText-white,
+.teaserText-blue,
+.teaserText-darkgrey,
+.teaserText-lightgrey {
+	position: relative;
+	padding: 1em;
+	}
+
+.teaserTitle {
+	font-size: 150%;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	}
+
+.teaserDescription {
+	font-weight: bold;
+	width: 425px;
+	margin-bottom: 0.5em;
+	}
+
+.teaserText-black,
+.teaserText-black a { color: #000 !important; }
+
+.teaserText-white,
+.teaserText-white a { color: #fff !important; }
+
+.teaserText-blue,
+.teaserText-blue a { color: #205C90 !important; }
+
+.teaserText-darkgrey,
+.teaserText-darkgrey a { color: #666 !important; }
+
+.teaserText-lightgrey,
+.teaserText-lightgrey a { color: #ddd !important; }
+
+.teaserLink a,
+.teaserLink a:visited {
+	border: none !important;
+	text-decoration: underline !important;
+	}	
+
+.teaserLink a:hover { text-decoration: none !important; }
+
+div.listingBar { margin: 3em 0 1em 0; font-size: 100%; }
+div.listingBar a:hover { background-color: #205C90; }
+
+.documentDescription { margin-bottom: 0.5em; }
+
+#content a:link, dl.portlet a:link { border: medium none !important; }
+#content div.newsImageContainer p.discreet { top: 0; background: none; color: #333333; text-align: center;}
+#content ul { margin-bottom: 1em; }
+
+
+/* portlet stuff */
+
+dl.portlet { background-color: #F6F6F6; border: 1px solid #EEEEEE; margin-bottom: 2em; }
+
+dl.portlet dt {
+    background-color: #76AD17;
+    border-bottom: 1.5em solid #63A100;
+    color: #ffffff;
+    font-size: 1em;
+    height: 0.5em;
+    line-height: 2em;
+    padding:  0.5em 0 0.5em 1em;
+    margin: -1px -1px 0 -1px;
+    }
+
+dl.portlet dt a,
+dl.portlet dt a:hover,
+dl.portlet dt a:visited { color: #ffffff !important; }
+
+dl.portlet .navTree { padding-top: 0.5em; }
+dl.portlet .navTreeItem { border-bottom: none !important; }
+
+dl.portlet ul.navTree .navTreeCurrentItem { padding-left: 1em; }
+.icons-on dl.portlet ul.navTree .navTreeCurrentItem { margin-left: 0; }
+
+
+dl.portlet-static-plone-demo .portletItem { padding: 1em 0.5em !important; }
+
+dl.portletLogin dd.portletItem {
+    padding-bottom: 0px;
+    padding-top: 0.5em;
+    } 
+
+dl.portletLogin dd.odd { padding-top: 1em; }
+
+
+/* footer stuff */
+
+#portal-footer { background: none; text-align: center; color: #ffffff !important; }
+
+#portal-footer a { color: #ffffff !important; }
+
+#portal-colophon,
+#portal-siteactions { color: #ffffff !important;}
+
+#portal-colophon a,
+#portal-siteactions a { color: #ffffff !important;}
+
+
+/* splash */
+
+#splash-documentation {
+    background: url("docs-splash.png") no-repeat scroll 2.5em 3.5em #205C90;
+    height: 17em;
+    padding-left: 14em;
+}
+
+div.splash {
+    background-color: #205C90;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    color: White;
+    font-family: "Helvetica Neue",Arial,FreeSans,sans-serif;
+    margin-bottom: 1em;
+    padding: 0.5em 1.5em 1em;
+}
+
+#content div.splash h1 {
+    color: White;
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+    font-size: 1.75em;
+    font-weight: 300;
+    letter-spacing: 0;
+    margin-bottom: 0.5em;
+}
+
+#content div.splash a.pointer {
+    background: url("sprite-ploneorg.png") no-repeat scroll 0 -115px transparent;
+    font-size: 115%;
+    padding-left: 16px;
+}
+
+#content div.splash a {
+    border: medium none;
+    color: White !important;
+    font-weight: bold;
+}
+
+/* </dtml-with> */

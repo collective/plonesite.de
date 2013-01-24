@@ -1,0 +1,42 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plonede.theme">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  
+  <i18n:registerTranslations directory="locales" />  
+  
+  <include package=".browser" />
+  <include package=".content" />
+
+  <!-- File System Directory Views registration -->
+  <cmf:registerDirectory name="plonede_images"/>
+  <cmf:registerDirectory name="plonede_js"/>
+  <cmf:registerDirectory name="plonede_templates"/>
+  <cmf:registerDirectory name="plonede_styles"/>
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Plone.de Theme"
+      directory="profiles/default"
+      description='Extension profile for the "Plone.de Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="plonede.theme.various"
+      title="Plone.de Theme: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="plonede.theme.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+  <class class="Products.ATContentTypes.content.folder.ATFolder">
+         <implements interface=".browser.interfaces.IBanner" />
+  </class>
+
+</configure>

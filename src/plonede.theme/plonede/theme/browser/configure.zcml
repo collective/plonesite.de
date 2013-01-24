@@ -1,0 +1,46 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plonede.theme">
+
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Plone.de Theme"
+      />
+
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <browser:jbot
+      directory="jbot_templates"
+      layer=".interfaces.IThemeSpecific" />
+ 
+  <browser:page
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      name="frontpage"
+      class=".frontpage.FrontpageView"
+      permission="zope2.View"
+      />
+  
+  <browser:viewlet
+      name="plonede.banner"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      layer=".interfaces.IThemeSpecific"
+      class=".banner.BannerViewlet"
+      permission="zope2.View"
+      />
+
+  <browser:resourceDirectory
+      name="plonede.theme.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+      
+  <browser:page
+	  for="Products.ATContentTypes.interface.topic.IATTopic"
+	  name="rssview"
+	  class=".rss.RssView"
+	  permission="zope2.View"
+	  />
+	  
+</configure>

@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="bgp.HeaderImageViewlet">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  <include package=".browser" />
+  <include package=".content" />
+  <include file="profiles.zcml" />
+
+  <class class="Products.ATContentTypes.content.folder.ATFolder">
+         <implements interface=".browser.interfaces.IHeaderImage" />
+  </class>
+
+</configure>

@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="bgp.HeaderImageViewlet">
+
+  <!-- Viewlets registration -->
+
+  <browser:viewlet
+        name="bgp.headerimage"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class="bgp.HeaderImageViewlet.browser.viewlets.HeaderImageViewlet"
+        permission="zope2.View"
+        layer=".interfaces.IHeaderImageProductLayer"
+        />
+
+  <!-- Zope 3 browser resources -->
+
+
+</configure>
