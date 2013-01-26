@@ -84,7 +84,10 @@ input.searchField {
 
 #ablteaser { margin-bottom: 1em; }
 
-.items .teaser { float: left; }
+.items .teaser { 
+    float: left; 
+    margin-bottom: 1em;
+    }
 
 .teaser {
 	width: 695px;
