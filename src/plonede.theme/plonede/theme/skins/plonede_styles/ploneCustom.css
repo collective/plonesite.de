@@ -1,0 +1,28 @@
+/* fix padding for portlet with centered image */
+dl.portlet-static-plone-konferenz .portletItem { padding: 1em 0.5em !important; }
+
+/* fixes for frontpage */
+.section-willkommen-zu-plone #portal-breadcrumbs { display: none; }
+.section-willkommen-zu-plone #content { margin-top: 0; }
+
+
+/* stylings for sponsors */
+
+#portal-sponsorbox { width: 870px; margin: 3em auto; }
+#portal-sponsorbox h1 { font-size: 130%; margin-bottom: 0.5em; text-align: center; }
+#portal-sponsorbox h2 { font-size: 120%; margin-bottom: 0.25em; }
+#category-gold { float: left; }
+
+/* Fix for headline vertical spacing, acsr 20120617_18-14-26 */
+
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2em;
+    margin-bottom: 0.1em;
+    margin-top: 0.8em;
+}
+
+/* Fix for dense description line spacing, acsr 20120617_18-14-26 */
+
+#content .documentDescription, #content #description {
+    line-height: 1.3em;
+}
