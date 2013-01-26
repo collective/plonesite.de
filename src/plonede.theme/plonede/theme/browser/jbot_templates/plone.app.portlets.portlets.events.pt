@@ -82,7 +82,16 @@
            tal:attributes="href view/all_events_link"
            i18n:translate="box_upcoming_events">
                 Upcoming events&hellip;
+        </a><br />
+        <a href=""
+           class="tile"
+           tal:define="catalog context/@@plone_tools/catalog;
+                       brains python:catalog(portal_type='FormFolder', id='termin-eintragen')"
+           tal:condition="brains"
+           tal:attributes="href python:brains[0].getURL()">
+                Termin eintragen&hellip;
         </a>
+
         <span class="portletBottomLeft"></span>
         <span class="portletBottomRight"></span>
     </dd>
