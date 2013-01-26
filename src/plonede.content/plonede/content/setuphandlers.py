@@ -1,6 +1,5 @@
 from Products.CMFCore.utils import getToolByName
 from plonede.content.config import PROJECTNAME
-from Products.CMFEditions.setuphandlers import DEFAULT_POLICIES
 from Products.CMFPlone.interfaces import IPropertiesTool
 
 # maybe we use this later on
@@ -31,22 +30,6 @@ def setProperties(site):
         if not properties.hasProperty(property['name']):
             properties.manage_addProperty(property['name'], property['value'], property['type_'])
     
-
-def setVersionedTypes(site):
-    """Enable versioning for custom content types used by iterate
-    """
-    
-    portal_repository = getToolByName(site, 'portal_repository')
-    versionable_types = list(portal_repository.getVersionableContentTypes())
-    for type_id in ('Content Type', ):
-        if type_id not in versionable_types:
-            versionable_types.append(type_id)
-            # Add default versioning policies to the versioned type
-            for policy_id in DEFAULT_POLICIES:
-                portal_repository.addPolicyForContentType(type_id, policy_id)
-    portal_repository.setVersionableContentTypes(versionable_types)
-
-
 def add_catalog_indexes(site, logger):
     """Add our indexes to the catalog.
 
