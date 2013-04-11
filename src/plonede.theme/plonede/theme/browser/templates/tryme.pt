@@ -1,6 +1,6 @@
 <div i18n:domain="plone">
-
     <a id="plonede-tryme"
-        href="http://demo.plone.de">
+       title="Plone auf demo.plone.org testen"
+       href="http://demo.plone.de">
     </a>
 </div>

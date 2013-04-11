@@ -241,7 +241,7 @@ div.splash {
 #plonede-tryme {
     position: absolute;
     right: 0px;
-    top: 1px;
+    top: 0px;
     background-image: url("++resource++plonede.theme.images/tryme_green.png");
     background-repeat: no-repeat;
     height: 149px;
