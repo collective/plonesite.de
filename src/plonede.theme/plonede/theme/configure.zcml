@@ -4,12 +4,13 @@
     xmlns:cmf="http://namespaces.zope.org/cmf"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
     i18n_domain="plonede.theme">
 
   <five:registerPackage package="." initialize=".initialize" />
-  
-  <i18n:registerTranslations directory="locales" />  
-  
+
+  <i18n:registerTranslations directory="locales" />
+
   <include package=".browser" />
   <include package=".content" />
 
@@ -38,5 +39,14 @@
   <class class="Products.ATContentTypes.content.folder.ATFolder">
          <implements interface=".browser.interfaces.IBanner" />
   </class>
+
+  <include package="collective.monkeypatcher" />
+  <monkey:patch
+      description="reorder portlets"
+      class="plone.portlets.retriever.PortletRetriever"
+      original="getPortlets"
+      replacement=".patch.getReversedPortlets"
+      />
+
 
 </configure>
