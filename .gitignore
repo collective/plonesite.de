@@ -1,25 +1,31 @@
-/develop-eggs
-/eggs
-/fake-eggs
-/bin
-/parts
-/downloads
-/var
-/build
-/dist
-/local.cfg
-/*.egg-info
-/.installed.cfg
-*.pyc
-/.Python
-/include
-/lib
-/.project
-/.pydevproject
-/.mr.developer.cfg
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+#Translations
 *.mo
-docs/Makefile
-docs/make.bat
-docs/doctrees
-docs/html
-*.swp
+
+#Mr Developer
+.mr.developer.cfg
+
+# local config
+local.cfg
+secret.cfg
