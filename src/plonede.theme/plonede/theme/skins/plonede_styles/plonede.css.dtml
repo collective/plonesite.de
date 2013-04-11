@@ -6,12 +6,13 @@ body {
 	background-image: url(&dtml-portal_url;/background-footer.png);
 	background-repeat: repeat-x;
 	background-position: 0 bottom;
-	border-top: 11px solid #329FD7;
+	/* border-top: 11px solid #329FD7; */
 	}
 
 #visual-portal-wrapper {
 	width: 60em;
 	margin: 0 auto;
+    margin-top: 22px;
 	}
 
 #portal-searchbox { margin-top: 2.5em; }
@@ -25,7 +26,7 @@ input.searchField {
     padding-left: 15px;
     width: 213px !important;
     }
-    
+
 .searchButton { display: none; }
 .searchSection { display: none; }
 
@@ -84,8 +85,8 @@ input.searchField {
 
 #ablteaser { margin-bottom: 1em; }
 
-.items .teaser { 
-    float: left; 
+.items .teaser {
+    float: left;
     margin-bottom: 1em;
     }
 
@@ -136,7 +137,7 @@ input.searchField {
 .teaserLink a:visited {
 	border: none !important;
 	text-decoration: underline !important;
-	}	
+	}
 
 .teaserLink a:hover { text-decoration: none !important; }
 
@@ -181,7 +182,7 @@ dl.portlet-static-plone-demo .portletItem { padding: 1em 0.5em !important; }
 dl.portletLogin dd.portletItem {
     padding-bottom: 0px;
     padding-top: 0.5em;
-    } 
+    }
 
 dl.portletLogin dd.odd { padding-top: 1em; }
 
@@ -235,6 +236,31 @@ div.splash {
     border: medium none;
     color: White !important;
     font-weight: bold;
+}
+
+#plonede-tryme {
+    position: absolute;
+    right: 0px;
+    top: 1px;
+    background-image: url("++resource++plonede.theme.images/tryme_green.png");
+    background-repeat: no-repeat;
+    height: 149px;
+    width: 149px;
+    z-index: 1200;
+}
+
+#slimbar {
+    position: absolute !important;
+    width: 100%;
+}
+
+#slimbar .container {
+    width: 83em;
+    margin: 0 auto;
+}
+
+#portal-personaltools-wrapper {
+
 }
 
 /* </dtml-with> */

@@ -14,14 +14,14 @@
   <browser:jbot
       directory="jbot_templates"
       layer=".interfaces.IThemeSpecific" />
- 
+
   <browser:page
       for="Products.CMFCore.interfaces.ISiteRoot"
       name="frontpage"
       class=".frontpage.FrontpageView"
       permission="zope2.View"
       />
-  
+
   <browser:viewlet
       name="plonede.banner"
       manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
@@ -35,12 +35,40 @@
       directory="images"
       layer=".interfaces.IThemeSpecific"
       />
-      
+
   <browser:page
 	  for="Products.ATContentTypes.interface.topic.IATTopic"
 	  name="rssview"
 	  class=".rss.RssView"
 	  permission="zope2.View"
 	  />
-	  
+
+  <browser:viewletManager
+    name="plone.portalouter"
+    provides=".viewlets.OuterViewletManager"
+    class="plone.app.viewletmanager.manager.OrderedViewletManager"
+    layer="plonede.theme.browser.interfaces.IThemeSpecific"
+    permission="zope2.View"
+    />
+
+  <browser:viewlet
+    name="plonede.tryme"
+    manager=".viewlets.OuterViewletManager"
+    layer="plonede.theme.browser.interfaces.IThemeSpecific"
+    class=".viewlets.TryMeViewlet"
+    template="templates/tryme.pt"
+    permission="zope2.View"
+    />
+
+  <browser:viewlet
+    name="plonede.ploneslimbar"
+    manager=".viewlets.OuterViewletManager"
+    layer="plonede.theme.browser.interfaces.IThemeSpecific"
+    class="collective.ploneslimbar.viewlet.SlimbarViewlet"
+    permission="zope2.View"
+    />
+
+
+
+
 </configure>

@@ -1,4 +1,12 @@
 <?xml version="1.0"?>
 <object>
 
+ <hidden manager="plone.portaltop" skinname="Plone.de Theme">
+     <viewlet name="collective.ploneslimbar" />
+ </hidden>
+
+ <hidden manager="plone.portalheader" skinname="Plone.de Theme">
+     <viewlet name="plone.personal_bar" />
+ </hidden>
+
 </object>
