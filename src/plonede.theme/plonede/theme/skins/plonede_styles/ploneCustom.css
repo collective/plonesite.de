@@ -1,3 +1,19 @@
+/* style the PloneKonf portal tab Button */
+
+#portal-globalnav #portaltab-plonekonf2012 {
+    float: right;
+    background: url("plonekonf2012_banner.png") repeat scroll 0 0 transparent;
+    height: 35px;
+    margin: 2px 3px;
+    width: 75px;
+}
+
+#portal-globalnav #portaltab-plonekonf2012 a {
+    border:None;
+    text-indent: -999em;
+    width: 50px;
+}
+
 /* fix padding for portlet with centered image */
 dl.portlet-static-plone-konferenz .portletItem { padding: 1em 0.5em !important; }
 
