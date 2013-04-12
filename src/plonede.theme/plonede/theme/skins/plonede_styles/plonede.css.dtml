@@ -297,4 +297,8 @@ div.splash {
     color: #fff !important;
 }
 
+.portletEvents .portletFooter {
+    display: none;
+}
+
 /* </dtml-with> */
