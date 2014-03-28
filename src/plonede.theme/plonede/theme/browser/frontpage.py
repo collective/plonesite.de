@@ -5,9 +5,6 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from Products.CMFCore.utils import getToolByName
 
-from plone.memoize.instance import memoize
-from plonede.content.interfaces import ITeaser
-
 from DateTime.DateTime import DateTime
 
 class FrontpageView(BrowserView):

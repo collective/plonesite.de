@@ -1,8 +1,6 @@
 from zope.interface import Interface
 from zope import schema
 
-from zope.app.container.constraints import contains
-
 from plonede.content import PlonedeMessageFactory as _
 
 class ITeaser(Interface):
