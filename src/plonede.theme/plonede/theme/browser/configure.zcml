@@ -22,13 +22,15 @@
       permission="zope2.View"
       />
 
-  <browser:viewlet
-      name="plonede.banner"
+    <browser:viewlet
+      name="plonede.bannerviewlet"
+      for="plone.dexterity.interfaces.IDexterityContent"
       manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+      class="collective.behavior.banner.browser.viewlets.BannerViewlet"
       layer=".interfaces.IThemeSpecific"
-      class=".banner.BannerViewlet"
       permission="zope2.View"
       />
+
 
   <browser:resourceDirectory
       name="plonede.theme.images"

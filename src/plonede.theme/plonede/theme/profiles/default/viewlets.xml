@@ -7,6 +7,7 @@
 
  <hidden manager="plone.portalheader" skinname="Plone.de Theme">
      <viewlet name="plone.personal_bar" />
+     <viewlet name="collective.bannerviewlet" />
  </hidden>
 
 </object>

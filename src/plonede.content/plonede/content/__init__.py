@@ -11,8 +11,6 @@ def initialize(context):
     configure.zcml, ct registration
     """
     
-    from content import teaser
-    
     content_types, constructors, ftis = atapi.process_types(
         atapi.listTypes(config.PROJECTNAME),
         config.PROJECTNAME)

@@ -6,18 +6,6 @@
 
   <include package="plone.app.contentmenu" />
 
-  <browser:resource
-      name="teaser.gif"
-      image="teaser.gif"
-      />
-
-  <browser:page
-      for="..interfaces.ITeaser"
-      name="view"
-      class=".teaser.TeaserView"
-      permission="zope2.View"
-      />
-
   <browser:page
       for="*"
       name="frontpageview"
