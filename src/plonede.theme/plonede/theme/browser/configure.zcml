@@ -39,7 +39,7 @@
       />
 
   <browser:page
-	  for="Products.ATContentTypes.interface.topic.IATTopic"
+	  for="plone.app.contenttypes.interfaces.ICollection"
 	  name="rssview"
 	  class=".rss.RssView"
 	  permission="zope2.View"
