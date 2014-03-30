@@ -29,3 +29,7 @@ pip-log.txt
 # local config
 local.cfg
 secret.cfg
+
+# eclipse and pydev project files
+.project
+.pydevproject
