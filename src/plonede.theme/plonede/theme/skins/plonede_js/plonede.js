@@ -1,5 +1,7 @@
-jq(document).ready(function() {
+(function($) {
+	$(document).ready(function(){
 
-	jq(".scrollable").scrollable({ circular: true, speed: 1000 }).autoscroll(10000);
-	
-});
+		// custom js code in here
+
+	});
+})(jQuery);
