@@ -293,6 +293,35 @@ div.splash {
     margin: 0 auto;
 }
 
+#slimbar ul {
+	background-color: #eeeeee !important;;
+}
+
+#slimbar dl.actionMenu.deactivated dd,
+#slimbar dl.actionMenu.activated dd {
+    margin-top: 0 !important;
+    min-width: 100%;
+    padding: 0 !important;
+    position: absolute;
+    width: auto;
+    z-index: 10;
+}
+
+#slimbar .actionMenuContent li a {
+    display: inline-block !important;
+    font-weight: normal;
+    padding: 0.1em 1em;
+    width: 100%;
+}
+
+#slimbar dl.actionMenu dt a {
+    background: url("++resource++ico_plone_mini.png") no-repeat scroll 6px 2px #235379 !important;
+    border-radius: 0 0 4px 4px !important;
+    font-weight: normal;
+    padding: 2px 10px 6px 26px !important;
+    margin: 0 !important;
+}
+
 #content .listingBar a:hover {
     color: #fff !important;
 }
