@@ -19,7 +19,7 @@ body {
 
 input.searchField { -moz-appearance: none; }
 input.searchField {
-    background: url("http://plone.org/search.png") no-repeat scroll 0 0 transparent;
+    background: url("&dtml-portal_url;/search.png") no-repeat scroll 0 0 transparent;
     border: medium none;
     color: #6E6F71;
     height: 26px;
