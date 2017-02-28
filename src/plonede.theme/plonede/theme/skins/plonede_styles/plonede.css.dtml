@@ -75,7 +75,6 @@ input.searchField {
 }
 
 #portal-banner {
-	width: 695px;
 	height: 200px;
 	overflow: hidden;
 	margin-bottom: 1em;
@@ -84,7 +83,6 @@ input.searchField {
 .scrollable {
 	position: relative;
 	overflow: hidden;
-	width: 695px;
 	height: 200px;
 	}
 
