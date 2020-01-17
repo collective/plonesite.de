@@ -12,7 +12,7 @@ pathlib2==2.3.5
 pre-commit==1.20.0
 pyyaml==5.2
 scandir==1.10.0
-setuptools==42.0.2
+setuptools==38.7.0
 toml==0.10.0
 typing==3.7.4.1
 virtualenv==16.7.8
