@@ -12,7 +12,7 @@ Lokale development Installation
     $ git clone git@github.com:collective/plonesite.de.git
     $ echo -e "[buildout]\nlogin = admin\npassword = admin" > secret.cfg
     $ ln -s local_develop.cfg local.cfg
-    $ python3.7 -m venv .
+    $ virtualenv .
     $ bin/pip install -r requirements.txt
     $ bin/buildout
     $ bin/instance fg
