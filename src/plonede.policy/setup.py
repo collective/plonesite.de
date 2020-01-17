@@ -26,9 +26,7 @@ setup(name='plonede.policy',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
-          'plonede.theme',
-          'plonede.content'
-      ],
+     ],
       entry_points="""
       # -*- Entry points: -*-
 
