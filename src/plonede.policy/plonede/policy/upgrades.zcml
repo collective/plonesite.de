@@ -20,5 +20,14 @@
     handler=".upgrades.remove_addons"
     />
 
+  <genericsetup:upgradeStep
+    source="1001"
+    destination="1002"
+    title="Cleanup in Plone 5.2"
+    description=""
+    profile="plonede.policy:default"
+    handler=".upgrades.cleanup_in_plone52"
+    />
+
 
 </configure>

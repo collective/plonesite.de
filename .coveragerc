@@ -1,0 +1,9 @@
+[report]
+include =
+    src/*
+omit =
+    */test*
+    */upgrades/*
+
+[html]
+directory = parts/test/htmlreport

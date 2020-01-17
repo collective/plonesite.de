@@ -1,2 +1,0 @@
-recursive-include plonede *
-global-exclude *pyc

@@ -12,9 +12,13 @@ var
 sdist
 develop-eggs
 .installed.cfg
+src-mrd/
 
 # Installer logs
 pip-log.txt
+pip-selfcheck.json
+.plone.versioncheck.cache
+.plone.versioncheck.tracked.json
 
 # Unit test / coverage reports
 .coverage
@@ -29,7 +33,11 @@ pip-log.txt
 # local config
 local.cfg
 secret.cfg
+pyvenv.cfg
 
-# eclipse and pydev project files
-.project
-.pydevproject
+etc/
+include/
+lib/
+local/
+
+.idea/

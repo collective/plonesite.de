@@ -1,5 +1,0 @@
-<div id="header_image"
-     tal:condition="view/type">
-  <img src="" alt="" tal:attributes="src view/header" />
-</div>
-
