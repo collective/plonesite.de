@@ -10,13 +10,7 @@
     background: aliceblue;
     border: 1px solid silver;
     padding: 15px;
-    min-height: 300px;
-}
-
-.plonede-box strong {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
+    min-height: 100px;
 }
 
 .languages {

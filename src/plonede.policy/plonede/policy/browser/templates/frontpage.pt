@@ -24,45 +24,44 @@
       </div>
     </div>
 
+<div class="section section-demo mb-5">
+    <div class="row mb-3">
+        <div class="col-8 offset-2 text-center">
+            <h2>Demo</h2>
+            <p class="lead">Auf diesen Seiten können Sie Plone und seine Funktionen testen. Bitte beachten Sie, dass es sich um
+            Demo-Seiten handelt. Die Inhalte der Seiten werden in regelmäßigen Abständen zurückgesetzt.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8 offset-2 text-center">
+            <img class="image-inline img-fluid"
+                 src="${portal_url}/resolveuid/3e2a18c8bb784c01af3818111579a6aa/@@images/image/preview"
+                 data-linktype="image" data-scale="preview" data-val="3e2a18c8bb784c01af3818111579a6aa"/>
+            <h3>Offizielle Plone 5.2 Demo mit Python 3 <br />bereitgestellt von der Plone Community</h3>
+            <p><a href="http://demo.plone.org" rel="noopener" target="_blank">http://demo.plone.org</a></p>
+            <h4>Erweiterungen</h4>
+            <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a></p>
+            <ul class="languages">
+                <li><img alt="Deutsch" src="${portal_url}/++plone++plonede.policy/flag-de.png"/></li>
+                <li><img alt="English" src="${portal_url}/++plone++plonede.policy/flag-uk.png"/></li>
+                <li><img alt="Spanish" src="${portal_url}/++plone++plonede.policy/flag-es.png"/></li>
+                <li><img alt="Euskara" src="${portal_url}/++plone++plonede.policy/flag-eu.png"/></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <div class="row margin">
     <div class="col-sm">
-        <h2>Demo</h2>
-        <p>Auf diesen Seiten können Sie Plone und seine Funktionen testen. Bitte beachten Sie, dass es sich um
-            Demo-Seiten handelt. Die Inhalte der Seiten werden in regelmäßigen Abständen zurückgesetzt.</p>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <div class="plonede-box">
-                    <h3>Plone 5.2</h3>
-                    <p><strong>Offizielle Demo mit Python 3 bereitgestellt von der Plone Community</strong></p>
-                    <img class="image-inline img-fluid"
-                         src="${portal_url}/resolveuid/3e2a18c8bb784c01af3818111579a6aa/@@images/image/preview"
-                         data-linktype="image" data-scale="preview" data-val="3e2a18c8bb784c01af3818111579a6aa"/>
-                    <p><a href="http://demo.plone.org" rel="noopener" target="_blank">http://demo.plone.org</a></p>
-                    <h4>Version</h4>
-                    <p>Plone 5.2<br/>Python 3.7</p>
-                    <h4>Erweiterungen</h4>
-                    <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a>
-                    </p>
-                    <ul class="languages">
-                        <li><img alt="Deutsch" src="${portal_url}/++plone++plonede.policy/flag-de.png"/></li>
-                        <li><img alt="English" src="${portal_url}/++plone++plonede.policy/flag-uk.png"/></li>
-                        <li><img alt="Spanish" src="${portal_url}/++plone++plonede.policy/flag-es.png"/></li>
-                        <li><img alt="Euskara" src="${portal_url}/++plone++plonede.policy/flag-eu.png"/></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="plonede-box">
-                    <h3>Plone 5.2</h3>
-                    <p><strong>Nightly Build mit Python 2 bereitgestellt von der Plone Comunity</strong></p>
+                    <h5>Nightly Plone 5.2 Build mit Python 2.7 bereitgestellt von der Plone Comunity</h5>
                     <img class="image-inline img-fluid"
                          src="${portal_url}/resolveuid/e0751ad5ab17416586a31d0ff021313d/@@images/image/preview"
                          data-linktype="image" data-scale="preview" data-val="e0751ad5ab17416586a31d0ff021313d"/>
                     <p><a href="http://demo-latest-py2.plone.de" rel="noopener" target="_blank">http://demo-latest-py2.plone.de</a>
                     </p>
-                    <h4>Version</h4>
-                    <p>Plone 5.2<br/>Python 2.7</p>
                     <h4>Erweiterungen</h4>
                     <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a>
                     </p>
@@ -72,17 +71,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <div class="plonede-box">
-                    <h3>Plone 5.2</h3>
-                    <p><strong>Nightly Build mit Python 3 bereitgestellt von der Plone Comunity</strong></p>
+                    <h5>Nightly Plone 5.2 Build mit Python 3.6 bereitgestellt von der Plone Comunity</h5>
                     <img class="image-inline img-fluid"
                          src="${portal_url}/resolveuid/b05713907a164bbe9a31051760e455bd/@@images/image/preview"
                          data-linktype="image" data-scale="preview" data-val="b05713907a164bbe9a31051760e455bd"/>
                     <p><a href="http://demo-latest-py3.plone.de" rel="noopener" target="_blank">http://demo-latest-py3.plone.de</a>
                     </p>
-                    <h4>Version</h4>
-                    <p>Plone 5.2<br/>Python 3.6</p>
                     <h4>Erweiterungen</h4>
                     <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a>
                     </p>
@@ -205,7 +201,7 @@
                     </div>
                 </div>
                 <div class="termine-more">
-                    <a href="../termine/event_listing?mode=past" class="btn btn-primary pull-right">Alle Termine</a>
+                    <a href="${portal_url}/termine" class="btn btn-primary pull-right">Alle Termine</a>
                 </div>
             </div>
         </div>
