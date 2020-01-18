@@ -17,7 +17,7 @@ setup(name='plonede.policy',
       keywords='',
       author='',
       author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      url='https://github.com/collective/plonesite.de',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['plonede'],
@@ -26,6 +26,8 @@ setup(name='plonede.policy',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'z3c.jbot',
+          'plonetheme.tokyo',
       ],
       entry_points="""
       # -*- Entry points: -*-

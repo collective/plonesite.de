@@ -6,6 +6,8 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="plonede.policy">
 
+  <include package=".browser" />
+
   <genericsetup:registerProfile
       name="default"
       title="Plone.de Policy"
@@ -13,6 +15,15 @@
       description="Installs the plonede.policy package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Plone.de Policy (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the plonede.policy add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
       />
 
   <include file="upgrades.zcml" />

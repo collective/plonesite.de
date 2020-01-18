@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<registry>
+
+  <record interface="Products.CMFPlone.interfaces.controlpanel.ISiteSchema"
+          name="plone.site_title" >
+    <value>Plone.de</value>
+  </record>
+
+  <!-- the plone.de bundle -->
+  <records prefix="plone.bundles/plonede-bundle"
+           interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="enabled">True</value>
+    <value key="compile">True</value>
+    <value key="csscompilation">++plone++plonede.policy/plonede.css</value>
+    <value key="jscompilation">++plone++plonede.policy/plonede.js</value>
+    <value key="last_compilation"></value>
+  </records>
+
+  <record name="plone.show_excluded_items">
+    <value>False</value>
+  </record>
+
+  <record name="plone.enable_sitemap">
+    <value>True</value>
+  </record>
+
+  <record name="plone.exposeDCMetaTags">
+    <value>True</value>
+  </record>
+
+  <record name="plone.icon_visibility">
+    <value>false</value>
+  </record>
+
+  <record name="plone.navigation_depth">
+      <value>1</value>
+  </record>
+
+  <record name="plone.available_languages">
+    <value>
+      <element>de</element>
+    </value>
+  </record>
+
+  <record name="plone.default_language">
+    <value>de</value>
+  </record>
+
+  <record name="plone.default_page_types">
+    <value>
+      <element>Document</element>
+      <element>News Item</element>
+      <element>Collection</element>
+    </value>
+  </record>
+
+  <record interface="Products.CMFPlone.interfaces.controlpanel.ILinkSchema"
+          name="plone.mark_special_links">
+    <value>False</value>
+  </record>
+
+  <record name="plone.formats"
+          interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"
+          field="formats">
+    <value>{
+"discreet": { "inline": "span", "classes": "discreet" },
+"clearfix": { "block": "div", "classes": "clearfix" },
+"underline": { "inline": "span", "classes": "underline", "exact": "true"}
+}
+    </value>
+  </record>
+
+</registry>
