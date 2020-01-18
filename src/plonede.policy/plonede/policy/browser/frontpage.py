@@ -21,3 +21,4 @@ class FrontPageView(BrowserView):
             sort_order='reverse',
             review_state='published',
             )
+        return brains
