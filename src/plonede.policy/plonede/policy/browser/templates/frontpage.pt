@@ -98,19 +98,23 @@
         <h2>News und Events</h2>
     </div>
     <div class="col-sm-8" id="news">
-        <div class="row">
+        <div class="row"
+             tal:define="news python: view.news()">
             <div class="col-sm-6">
-                <div class="featured-news"><img class="image-inline img-fluid"
-                                                src="${portal_url}/resolveuid/d339526cdb554272a5455fe52da48d51/@@images/image/preview"
-                                                data-linktype="image" data-scale="preview"
-                                                data-val="d339526cdb554272a5455fe52da48d51"/>
-                    <h2>Plonator Sprint in München</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur lectus quis mattis
-                        viverra. Nunc mauris ipsum, ...</p>
+                <div class="featured-news"
+                     tal:define="item python: news[0]">
+                    <img class="image-inline img-fluid"
+                         tal:condition="python: item.get('tag', False)"
+                         tal:replace="structure python: item['tag']"
+                         />
+                    <h2 tal:content="python: item['title']"></h2>
+                    <p tal:content="python: item['description']"></p>
                 </div>
             </div>
             <div class="col-sm-6 news-items">
-                <div class="news-item"><img class="image-left"
+                <div class="news-item"
+                     tal:repeat="item python: news[1:]">
+                    <img class="image-left"
                                             src="${portal_url}/resolveuid/5bec31e7a9c84d659cd8b048f1caaca3/@@images/image/tile"
                                             data-linktype="image" data-scale="tile"
                                             data-val="5bec31e7a9c84d659cd8b048f1caaca3"/>
