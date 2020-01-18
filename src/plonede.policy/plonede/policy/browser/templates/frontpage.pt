@@ -34,9 +34,9 @@
     </div>
     <div class="row">
         <div class="col-8 offset-2 text-center">
+            <h3>Offizielle Plone 5.2 Demo mit Python 3 <br />bereitgestellt von der Plone Community</h3>
             <img class="image-inline img-fluid"
                  src="${portal_url}/++plone++plonede.policy/plone-5-1.png"/>
-            <h3>Offizielle Plone 5.2 Demo mit Python 3 <br />bereitgestellt von der Plone Community</h3>
             <p><a href="http://demo.plone.org" rel="noopener" target="_blank">http://demo.plone.org</a></p>
             <h4>Erweiterungen</h4>
             <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a></p>
@@ -46,41 +46,6 @@
                 <li><img alt="Spanish" src="${portal_url}/++plone++plonede.policy/flag-es.png"/></li>
                 <li><img alt="Euskara" src="${portal_url}/++plone++plonede.policy/flag-eu.png"/></li>
             </ul>
-        </div>
-    </div>
-</div>
-
-<div class="row margin">
-    <div class="col-sm">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="plonede-box">
-                    <h5>Nightly Plone 5.2 Build mit Python 2.7 bereitgestellt von der Plone Comunity</h5>
-                    <p><a href="http://demo-latest-py2.plone.de" rel="noopener" target="_blank">http://demo-latest-py2.plone.de</a>
-                    </p>
-                    <h4>Erweiterungen</h4>
-                    <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a>
-                    </p>
-                    <ul class="languages">
-                        <li><img alt="Deutsch" src="${portal_url}/++plone++plonede.policy/flag-de.png"/></li>
-                        <li><img alt="English" src="${portal_url}/++plone++plonede.policy/flag-uk.png"/></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="plonede-box">
-                    <h5>Nightly Plone 5.2 Build mit Python 3.6 bereitgestellt von der Plone Comunity</h5>
-                    <p><a href="http://demo-latest-py3.plone.de" rel="noopener" target="_blank">http://demo-latest-py3.plone.de</a>
-                    </p>
-                    <h4>Erweiterungen</h4>
-                    <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a>
-                    </p>
-                    <ul class="languages">
-                        <li><img alt="Deutsch" src="${portal_url}/++plone++plonede.policy/flag-de.png"/></li>
-                        <li><img alt="English" src="${portal_url}/++plone++plonede.policy/flag-uk.png"/></li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 </div>
