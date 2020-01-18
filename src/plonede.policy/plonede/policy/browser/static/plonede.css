@@ -94,9 +94,3 @@
         padding: 1.3rem 0;
     }
 }
-
-@media(min-width: 768px){
-    #news {
-        border-right: 1px solid #d9d9d9;
-    }
-}
