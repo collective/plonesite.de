@@ -147,7 +147,7 @@
                 </div>
             </div>
             <div class="termine-more">
-                <a href="../termine/event_listing?mode=past" class="btn btn-primary pull-right">Vergangene Termine</a>
+                <a href="../termine/event_listing?mode=past" class="btn btn-primary pull-right">Alle Termine</a>
             </div>
         </div>
     </div>
