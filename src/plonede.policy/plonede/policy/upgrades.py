@@ -162,12 +162,12 @@ def cleanup_in_plone52(context=None):
     remove_archetypes_traces()
     portal = api.portal.get()
     cleanUpSkinsTool(portal)
+    qi = api.portal.get_tool('portal_quickinstaller')
     # Fix diazo theme
-    installOrReinstallProduct(portal, 'plone.app.theming')
+    qi.reinstallProducts(['plone.app.theming'])
     # Fix issue where we cannot pack the DB after it was migrated to Python 3
-    installOrReinstallProduct(portal, 'plone.app.relationfield')
+    qi.reinstallProducts(['plone.app.relationfield'])
     pack_database()
-
 
 
 def migrate_ATBTreeFolder(context=None):
