@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from plone import api
+from plone.app.upgrade.utils import cleanUpSkinsTool
+from plone.app.upgrade.utils import installOrReinstallProduct
 from zExceptions import BadRequest
 from zope.lifecycleevent import modified
 from zope.globalrequest import getRequest
@@ -158,6 +160,14 @@ def cleanup_in_plone52(context=None):
     migrate_ATBTreeFolder()
     uninstall_archetypes()
     remove_archetypes_traces()
+    portal = api.portal.get()
+    cleanUpSkinsTool(portal)
+    # Fix diazo theme
+    installOrReinstallProduct(portal, 'plone.app.theming')
+    # Fix issue where we cannot pack the DB after it was migrated to Python 3
+    installOrReinstallProduct(portal, 'plone.app.relationfield')
+    pack_database()
+
 
 
 def migrate_ATBTreeFolder(context=None):
@@ -249,3 +259,11 @@ def remove_archetypes_traces(context=None):
                 log.info('Deleted {}'.format(tool))
             except Exception as e:
                 log.info(u'Another problem removing {}: {}'.format(tool, e))
+
+
+def pack_database(context=None):
+    """Pack the database"""
+    portal = api.portal.get()
+    app = portal.__parent__
+    db = app._p_jar.db()
+    db.pack(days=0)
