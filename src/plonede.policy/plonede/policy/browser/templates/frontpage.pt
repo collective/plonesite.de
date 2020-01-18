@@ -131,68 +131,70 @@
       </div>
     </div>
 
-  <div class="row margin">
-    <div class="col-sm-12" id="news_heading">
-        <h2>News und Events</h2>
+<div class="section section-news-events mb-5">
+    <div class="row mb-3">
+        <div class="col-12" id="news_heading">
+            <h2>News und Events</h2>
+        </div>
     </div>
-    <div class="col-sm-8" id="news">
-        <div class="row"
-             tal:define="news python: view.news()">
-            <div class="col-sm-6">
-                <div class="featured-news"
-                     tal:define="item python: news[0]">
-                    <a href="" tal:attributes="href python: item['url']">
-                    <img class="image-inline img-fluid"
-                         tal:condition="python: item.get('tag', False)"
-                         tal:replace="structure python: item['tag']"
-                         />
-                    <h2 tal:content="python: item['title']"></h2>
-                    <p tal:content="python: item['description']"></p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-6 news-items">
-                <div class="news-item"
-                     tal:repeat="item python: news[1:]">
-                    <a href=""
-                        tal:attributes="href python: item['url'];
-                                        title python: item['description']">
-                        <img class="image-left"
+    <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-12" id="news">
+            <div class="row" tal:define="news python: view.news()">
+                <div class="col-lg-6 col-md-12">
+                    <div class="featured-news"
+                         tal:define="item python: news[0]">
+                        <a href="" tal:attributes="href python: item['url']">
+                        <img class="image-inline img-fluid"
                              tal:condition="python: item.get('tag', False)"
                              tal:replace="structure python: item['tag']"
                              />
                         <h2 tal:content="python: item['title']"></h2>
-                    </a>
-                </div>
-                <div class="news-more"><a href="${portal_url}/nachrichten" class="btn btn-primary pull-right">Alle Nachrichten</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4" id="events">
-        <div class="event-items">
-            <div class="row event-item" tal:repeat="item python: view.events()">
-                <div class="col-md-4 cal">
-                    <div class="p-2 text-center border">
-                        <p class="h3 p-1 bg-secondary text-white rounded day" tal:content="python: item['start']['day']">19</p>
-                        <p class="month" tal:content="python: item['start']['month_name']">Januar</p>
+                        <p tal:content="python: item['description']"></p>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-8 description">
-                    <h5 class="mt-0">
-                        <a tal:attributes="href python: item['url']" tal:content="python: item['title']" class="stretched-link"></a>
-                    </h5>
-                    <p tal:content="python: item['description']"></p>
+                <div class="col-lg-6 col-md-12 news-items">
+                    <div class="news-item"
+                         tal:repeat="item python: news[1:]">
+                        <a href=""
+                            tal:attributes="href python: item['url'];
+                                            title python: item['description']">
+                            <img class="image-left"
+                                 tal:condition="python: item.get('tag', False)"
+                                 tal:replace="structure python: item['tag']"
+                                 />
+                            <h2 tal:content="python: item['title']"></h2>
+                        </a>
+                    </div>
+                    <div class="news-more"><a href="#" class="btn btn-primary pull-right">Alle Nachrichten</a></div>
                 </div>
             </div>
-            <div class="termine-more">
-                <a href="${portal_url}/termine" class="btn btn-primary pull-right">Alle Termine</a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12" id="events">
+            <div class="event-items">
+                <div class="row event-item" tal:repeat="item python: view.events()">
+                    <div class="col-md-4 cal">
+                        <div class="p-2 text-center border">
+                            <p class="h3 p-1 bg-secondary text-white rounded day" tal:content="python: item['start']['day']">19</p>
+                            <p class="month" tal:content="python: item['start']['month_name']">Januar</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 description">
+                        <h5 class="mt-0">
+                            <a tal:attributes="href python: item['url']" tal:content="python: item['title']" class="stretched-link"></a>
+                        </h5>
+                        <p tal:content="python: item['description']"></p>
+                    </div>
+                </div>
+                <div class="termine-more">
+                    <a href="../termine/event_listing?mode=past" class="btn btn-primary pull-right">Alle Termine</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-  </metal:content-core>
+</metal:content-core>
 
 </body>
-
 </html>
