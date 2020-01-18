@@ -27,12 +27,12 @@ class FrontPageView(BrowserView):
         for index, brain in enumerate(brains):
             obj = brain.getObject()
             if index == 0:
-                width = 400
-                height = 200
+                width = 600
+                height = 300
                 css_class = 'image-inline img-fluid'
             else:
-                width = 64
-                height = 64
+                width = 200
+                height = 200
                 css_class = 'image-left'
 
             scales = api.content.get_view(
