@@ -11,7 +11,6 @@ logger = logging.getLogger('plonede.policy')
 class FrontPageView(BrowserView):
 
     def __call__(self):
-        # foo
         return self.index()
 
     def news(self):
@@ -21,11 +20,18 @@ class FrontPageView(BrowserView):
             sort_on='effective',
             sort_order='reverse',
             review_state='published',
-            sort_limit=4,
-            )[:4]
-        for brain in brains:
+            sort_limit=5,
+            )[:5]
+        for index, brain in enumerate(brains):
             obj = brain.getObject()
-            # if getattr(obj.aq_base, 'image'):
+            if index == 0:
+                width = 400
+                height = 200
+                css_class = 'image-inline img-fluid'
+            else:
+                width = 64
+                height = 64
+                css_class = 'image-left'
 
             scales = api.content.get_view(
                 name='images',
@@ -33,18 +39,35 @@ class FrontPageView(BrowserView):
                 request=self.request)
             scale = scales.scale(
                 'image',
-                width=400,
-                height=200,
+                width=width,
+                height=height,
                 direction='down')
-            tag = scale.tag() if scale else None
+            tag = scale.tag(css_class=css_class) if scale else None
 
-            # 64, 64,
-            # src = obj.
             results.append({
                 'title': brain.Title,
                 'description': brain.Description,
                 'url': brain.getURL(),
                 # 'src': brain.getURL(),
                 'tag': tag,
+                })
+        return results
+
+
+    def events(self):
+        results = []
+        brains = api.content.find(
+            portal_type='Event',
+            sort_on='start',
+            sort_order='reverse',
+            review_state='published',
+            sort_limit=4,
+            )[:4]
+        for brain in brains:
+            results.append({
+                'title': brain.Title,
+                'description': brain.Description,
+                'url': brain.getURL(),
+                'start': brain.start,
                 })
         return results

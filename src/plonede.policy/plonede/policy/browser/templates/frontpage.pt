@@ -103,40 +103,48 @@
             <div class="col-sm-6">
                 <div class="featured-news"
                      tal:define="item python: news[0]">
+                    <a href="" tal:attributes="href python: item['url']">
                     <img class="image-inline img-fluid"
                          tal:condition="python: item.get('tag', False)"
                          tal:replace="structure python: item['tag']"
                          />
                     <h2 tal:content="python: item['title']"></h2>
                     <p tal:content="python: item['description']"></p>
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6 news-items">
                 <div class="news-item"
                      tal:repeat="item python: news[1:]">
+                    <a href=""
+                        tal:attributes="href python: item['url'];
+                                        title python: item['description']">
                     <img class="image-left"
-                                            src="${portal_url}/resolveuid/5bec31e7a9c84d659cd8b048f1caaca3/@@images/image/tile"
-                                            data-linktype="image" data-scale="tile"
-                                            data-val="5bec31e7a9c84d659cd8b048f1caaca3"/>
-                    <h2>Alpine City Sprint 2019</h2>
-                </div>
-                <div class="news-item"><img class="image-left"
-                                            src="${portal_url}/resolveuid/c996b5173b2d458eb96eac7c07308dc0/@@images/image/tile"
-                                            data-linktype="image" data-scale="tile"
-                                            data-val="c996b5173b2d458eb96eac7c07308dc0"/>
-                    <h2>Plone Open Garden 2019 in Sorrento</h2>
-                </div>
-                <div class="news-item"><img class="image-left"
-                                            src="${portal_url}/resolveuid/ec33fd6b1815407cb357ea2e79acb3d1/@@images/image/tile"
-                                            data-linktype="image" data-scale="tile"
-                                            data-val="ec33fd6b1815407cb357ea2e79acb3d1"/>
-                    <h2>Plone Conference 2019</h2>
+                         tal:condition="python: item.get('tag', False)"
+                         tal:replace="structure python: item['tag']"
+                         />
+                    <h2 tal:content="python: item['title']"></h2>
+                </a>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-sm-4" id="events">
-        <div class="plonede-box">Column Termine</div>
+        <div class="plonede-box">
+            <div tal:repeat="item python: view.events()">
+              <a tal:attributes="href python: item['url']">
+              <span class="dtstart pat-moment"
+                    title="${python:item['start'].isoformat()}"
+                    data-pat-moment="format:DD.MM.YYYY"
+                    data-date="${python: item['start'].isoformat()}"
+                    >
+                ${python: item['start'].ctime()}
+              </span>
+              <h2 tal:content="python: item['title']"></h2>
+              <p tal:content="python: item['description']"></p>
+              </a>
+            </div>
+        </div>
     </div>
 </div>
 
