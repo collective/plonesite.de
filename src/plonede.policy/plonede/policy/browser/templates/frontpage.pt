@@ -57,9 +57,6 @@
             <div class="col-sm-6">
                 <div class="plonede-box">
                     <h5>Nightly Plone 5.2 Build mit Python 2.7 bereitgestellt von der Plone Comunity</h5>
-                    <img class="image-inline img-fluid"
-                         src="${portal_url}/resolveuid/e0751ad5ab17416586a31d0ff021313d/@@images/image/preview"
-                         data-linktype="image" data-scale="preview" data-val="e0751ad5ab17416586a31d0ff021313d"/>
                     <p><a href="http://demo-latest-py2.plone.de" rel="noopener" target="_blank">http://demo-latest-py2.plone.de</a>
                     </p>
                     <h4>Erweiterungen</h4>
@@ -74,9 +71,6 @@
             <div class="col-sm-6">
                 <div class="plonede-box">
                     <h5>Nightly Plone 5.2 Build mit Python 3.6 bereitgestellt von der Plone Comunity</h5>
-                    <img class="image-inline img-fluid"
-                         src="${portal_url}/resolveuid/b05713907a164bbe9a31051760e455bd/@@images/image/preview"
-                         data-linktype="image" data-scale="preview" data-val="b05713907a164bbe9a31051760e455bd"/>
                     <p><a href="http://demo-latest-py3.plone.de" rel="noopener" target="_blank">http://demo-latest-py3.plone.de</a>
                     </p>
                     <h4>Erweiterungen</h4>
