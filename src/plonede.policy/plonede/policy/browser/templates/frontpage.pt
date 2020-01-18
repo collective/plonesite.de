@@ -35,8 +35,7 @@
     <div class="row">
         <div class="col-8 offset-2 text-center">
             <img class="image-inline img-fluid"
-                 src="${portal_url}/resolveuid/3e2a18c8bb784c01af3818111579a6aa/@@images/image/preview"
-                 data-linktype="image" data-scale="preview" data-val="3e2a18c8bb784c01af3818111579a6aa"/>
+                 src="${portal_url}/++plone++plonede.policy/plone-5-1.png"/>
             <h3>Offizielle Plone 5.2 Demo mit Python 3 <br />bereitgestellt von der Plone Community</h3>
             <p><a href="http://demo.plone.org" rel="noopener" target="_blank">http://demo.plone.org</a></p>
             <h4>Erweiterungen</h4>
