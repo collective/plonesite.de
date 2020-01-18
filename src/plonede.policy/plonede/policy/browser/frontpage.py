@@ -33,7 +33,7 @@ class FrontPageView(BrowserView):
             else:
                 width = 200
                 height = 200
-                css_class = 'image-left'
+                css_class = 'image-inline img-fluid'
 
             scales = api.content.get_view(
                 name='images',
@@ -67,7 +67,7 @@ class FrontPageView(BrowserView):
         for brain in brains:
             results.append({
                 'title': brain.Title,
-                'description': self.plone_view.cropText(brain.Description, 55),
+                'description': brain.Description,
                 'url': brain.getURL(),
                 'start': spell_date(brain.start),
             })

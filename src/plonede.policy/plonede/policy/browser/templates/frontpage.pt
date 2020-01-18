@@ -154,17 +154,21 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 news-items">
-                    <div class="news-item"
+                    <div class="row news-item"
                          tal:repeat="item python: news[1:]">
-                        <a href=""
-                            tal:attributes="href python: item['url'];
-                                            title python: item['description']">
-                            <img class="image-left"
-                                 tal:condition="python: item.get('tag', False)"
-                                 tal:replace="structure python: item['tag']"
-                                 />
-                            <h2 tal:content="python: item['title']"></h2>
-                        </a>
+                        <div class="col-4">
+                             <img class="image-left img-fluid"
+                                  tal:condition="python: item.get('tag', False)"
+                                  tal:replace="structure python: item['tag']"
+                             />
+                        </div>
+                        <div class="col-8">
+                            <a href=""
+                                tal:attributes="href python: item['url'];
+                                                title python: item['description']">
+                                <h2 tal:content="python: item['title']"></h2>
+                            </a>
+                        </div>
                     </div>
                     <div class="news-more"><a href="#" class="btn btn-primary pull-right">Alle Nachrichten</a></div>
                 </div>
@@ -183,13 +187,13 @@
         <div class="col-md-8 offset-md-2" id="events">
             <div class="event-items">
                 <div class="row event-item" tal:repeat="item python: view.events()">
-                    <div class="col-md-4 cal">
+                    <div class="col-4 cal">
                         <div class="p-2 text-center border">
                             <p class="h3 p-1 bg-secondary text-white rounded day" tal:content="python: item['start']['day']">19</p>
                             <p class="month" tal:content="python: item['start']['month_name']">Januar</p>
                         </div>
                     </div>
-                    <div class="col-md-8 description">
+                    <div class="col-8 description">
                         <h5 class="mt-0">
                             <a tal:attributes="href python: item['url']" tal:content="python: item['title']" class="stretched-link"></a>
                         </h5>
