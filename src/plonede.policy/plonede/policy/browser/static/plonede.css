@@ -67,3 +67,14 @@
 #news .news-item .image-left {
     margin: 0 15px 10px 0;
 }
+
+.navbar {
+    display: none;
+}
+
+@media(min-width:992px){
+    .navbar {
+        display: block;
+        padding: 1.3rem 0;
+      }
+}
