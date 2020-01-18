@@ -119,30 +119,35 @@
                     <a href=""
                         tal:attributes="href python: item['url'];
                                         title python: item['description']">
-                    <img class="image-left"
-                         tal:condition="python: item.get('tag', False)"
-                         tal:replace="structure python: item['tag']"
-                         />
-                    <h2 tal:content="python: item['title']"></h2>
-                </a>
+                        <img class="image-left"
+                             tal:condition="python: item.get('tag', False)"
+                             tal:replace="structure python: item['tag']"
+                             />
+                        <h2 tal:content="python: item['title']"></h2>
+                    </a>
                 </div>
+                <div class="news-more"><a href="#" class="btn btn-primary pull-right">Alle Nachrichten</a></div>
             </div>
         </div>
     </div>
     <div class="col-sm-4" id="events">
-        <div class="plonede-box">
-            <div tal:repeat="item python: view.events()">
-              <a tal:attributes="href python: item['url']">
-              <span class="dtstart pat-moment"
-                    title="${python:item['start'].isoformat()}"
-                    data-pat-moment="format:DD.MM.YYYY"
-                    data-date="${python: item['start'].isoformat()}"
-                    >
-                ${python: item['start'].ctime()}
-              </span>
-              <h2 tal:content="python: item['title']"></h2>
-              <p tal:content="python: item['description']"></p>
-              </a>
+        <div class="event-items">
+            <div class="row event-item" tal:repeat="item python: view.events()">
+                <div class="col-md-4 cal">
+                    <div class="p-2 text-center border">
+                        <p class="h3 p-1 bg-secondary text-white rounded day" tal:content="python: item['start']['day']">19</p>
+                        <p class="month" tal:content="python: item['start']['month_name']">Januar</p>
+                    </div>
+                </div>
+                <div class="col-md-8 description">
+                    <h5 class="mt-0">
+                        <a tal:attributes="href python: item['url']" tal:content="python: item['title']" class="stretched-link"></a>
+                    </h5>
+                    <p tal:content="python: item['description']"></p>
+                </div>
+            </div>
+            <div class="termine-more">
+                <a href="../termine/event_listing?mode=past" class="btn btn-primary pull-right">Vergangene Termine</a>
             </div>
         </div>
     </div>

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from plone import api
+from plone.app.event.base import spell_date
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
@@ -20,8 +21,8 @@ class FrontPageView(BrowserView):
             sort_on='effective',
             sort_order='reverse',
             review_state='published',
-            sort_limit=5,
-            )[:5]
+            sort_limit=4,
+            )[:4]
         for index, brain in enumerate(brains):
             obj = brain.getObject()
             if index == 0:
@@ -53,7 +54,6 @@ class FrontPageView(BrowserView):
                 })
         return results
 
-
     def events(self):
         results = []
         brains = api.content.find(
@@ -61,13 +61,13 @@ class FrontPageView(BrowserView):
             sort_on='start',
             sort_order='reverse',
             review_state='published',
-            sort_limit=4,
-            )[:4]
+            sort_limit=3,
+            )[:3]
         for brain in brains:
             results.append({
                 'title': brain.Title,
                 'description': brain.Description,
                 'url': brain.getURL(),
-                'start': brain.start,
-                })
+                'start': spell_date(brain.start),
+            })
         return results

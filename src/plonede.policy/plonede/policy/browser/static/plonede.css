@@ -72,6 +72,18 @@
     display: none;
 }
 
+.event-item {
+    padding-bottom: 10px;
+}
+
+.event-item .month {
+    margin: 0;
+}
+
+.event-item .description {
+    padding-left: 0;
+}
+
 @media(min-width:992px){
     .navbar {
         display: block;
