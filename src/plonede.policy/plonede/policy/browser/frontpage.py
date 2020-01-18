@@ -12,6 +12,7 @@ logger = logging.getLogger('plonede.policy')
 class FrontPageView(BrowserView):
 
     def __call__(self):
+        self.plone_view = api.content.get_view('plone', self.context, self.request)
         return self.index()
 
     def news(self):
@@ -47,7 +48,7 @@ class FrontPageView(BrowserView):
 
             results.append({
                 'title': brain.Title,
-                'description': brain.Description,
+                'description': self.plone_view.cropText(brain.Description, 120),
                 'url': brain.getURL(),
                 # 'src': brain.getURL(),
                 'tag': tag,
@@ -66,7 +67,7 @@ class FrontPageView(BrowserView):
         for brain in brains:
             results.append({
                 'title': brain.Title,
-                'description': brain.Description,
+                'description': self.plone_view.cropText(brain.Description, 55),
                 'url': brain.getURL(),
                 'start': spell_date(brain.start),
             })

@@ -126,7 +126,7 @@
                         <h2 tal:content="python: item['title']"></h2>
                     </a>
                 </div>
-                <div class="news-more"><a href="#" class="btn btn-primary pull-right">Alle Nachrichten</a></div>
+                <div class="news-more"><a href="${portal_url}/nachrichten" class="btn btn-primary pull-right">Alle Nachrichten</a></div>
             </div>
         </div>
     </div>
@@ -147,7 +147,7 @@
                 </div>
             </div>
             <div class="termine-more">
-                <a href="../termine/event_listing?mode=past" class="btn btn-primary pull-right">Alle Termine</a>
+                <a href="${portal_url}/termine" class="btn btn-primary pull-right">Alle Termine</a>
             </div>
         </div>
     </div>
