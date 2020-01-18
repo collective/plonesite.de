@@ -18,4 +18,13 @@
       directory="static"
       />
 
+  <browser:page
+      name="frontpage"
+      for="plone.app.contenttypes.interfaces.IDocument"
+      layer="plonede.policy.interfaces.IPlonedePolicyLayer"
+      class=".frontpage.FrontPageView"
+      template="templates/frontpage.pt"
+      permission="zope2.View"
+      />
+
 </configure>
