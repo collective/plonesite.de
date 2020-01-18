@@ -157,10 +157,14 @@
                     <div class="row news-item"
                          tal:repeat="item python: news[1:]">
                         <div class="col-4">
-                             <img class="image-left img-fluid"
-                                  tal:condition="python: item.get('tag', False)"
-                                  tal:replace="structure python: item['tag']"
-                             />
+                            <a href=""
+                                tal:attributes="href python: item['url'];
+                                                title python: item['description']">
+                                <img class="image-left img-fluid"
+                                    tal:condition="python: item.get('tag', False)"
+                                    tal:replace="structure python: item['tag']"
+                                />
+                            </a>
                         </div>
                         <div class="col-8">
                             <a href=""
