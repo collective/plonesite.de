@@ -203,16 +203,16 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 offset-md-2" id="events">
+        <div class="col-lg-8 offset-lg-2" id="events">
             <div class="event-items">
                 <div class="row event-item" tal:repeat="item python: view.events()">
-                    <div class="col-4 cal">
+                    <div class="col cal">
                         <div class="p-2 text-center border">
                             <p class="h3 p-1 bg-secondary text-white rounded day" tal:content="python: item['start']['day']">19</p>
                             <p class="month" tal:content="python: item['start']['month_name']">Januar</p>
                         </div>
                     </div>
-                    <div class="col-8 description">
+                    <div class="col description">
                         <h5 class="mt-0">
                             <a tal:attributes="href python: item['url']" tal:content="python: item['title']" class="stretched-link"></a>
                         </h5>

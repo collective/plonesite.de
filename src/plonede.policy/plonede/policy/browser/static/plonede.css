@@ -87,6 +87,10 @@
     color: #212529;
 }
 
+#events .cal {
+    max-width: 132px;
+}
+
 .event-item {
     padding-bottom: 10px;
 }
