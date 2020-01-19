@@ -17,7 +17,7 @@
                 <h1>Das professionelle CMS für Ihr Unternehmen</h1>
                 <p class="lead">Plone ist das perfekte Content-Management-System für Ihr Unternehmen. Es basiert auf
                     Python und legt seinen Schwerpunkt auf Sicherheit und Workflows.</p>
-                <a class="btn btn-primary btn-xl" href="http://demo.plone.org">Demo aufrufen</a>
+                <a class="btn btn-primary btn-xl" href="http://demo.plone.org" target="_blank">Demo aufrufen</a>
             </div>
             <div class="col-md-6 px-3">
                 <img src="${navroot}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2" title="Plone 5.2 Screenshot"
@@ -32,8 +32,7 @@
             <div class="col-8 offset-2 text-center">
                 <h2>Features</h2>
                 <p class="lead">Zahlreiche Features sind out of the Box verfügbar und lassen sich je nach Anforderung
-                    konfigurieren. Workflows und die vom BSI in einer Studie belegten, erstklassigen Security runden
-                    den Funktionsumfang ab.</p>
+                    konfigurieren.</p>
             </div>
         </div>
 
@@ -119,7 +118,7 @@
       <div class="row mb-3">
         <div class="col-8 offset-2 text-center">
           <h2>Plone Dienstleister</h2>
-          <p class="lead">Kontaktieren Sie einen Dienstleister um professionelle Unterstützung zu den Themen Einrichtung, Entwicklung und Betrieb zu erhalten.</p>
+          <p class="lead">Kontaktieren Sie einen Dienstleister um professionelle Unterstützung zu erhalten.</p>
         </div>
       </div>
       <div tal:replace="structure python:providers.text.output_relative_to(view.context)"> Providers page </div>
@@ -162,7 +161,7 @@
         <div class="row mb-3">
             <div class="col-8 offset-2 text-center">
                 <h2>Nachrichten</h2>
-                <p class="lead">Nachrichten aus dem deutschsprachigen Raum rund um das Open-Source Content-Management-System Plone finden Sie hier.</p>
+                <p class="lead">Nachrichten aus dem deutschsprachigen Raum rund Plone finden Sie hier.</p>
             </div>
         </div>
         <div class="row">
@@ -211,7 +210,7 @@
         <div class="row mb-3">
             <div class="col-8 offset-2 text-center">
                 <h2>Events</h2>
-                <p class="lead">Deutschsprachige Veranstaltungen zu Plone finden Sie in diesem hier. Eine Liste mit allen internationalen Terminen finden Sie auch auf <a href="https://plone.org" title="Plone Community Site">Plone.org</a>.</p>
+                <p class="lead">Veranstaltungen zu Plone finden Sie hier. Eine Liste mit allen internationalen Terminen finden Sie auch auf <a href="https://plone.org" title="Plone Community Site">Plone.org</a>.</p>
             </div>
         </div>
         <div class="row">
