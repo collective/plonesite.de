@@ -113,3 +113,7 @@
 .glyphicon-x2 {
   font-size: 2rem;
 }
+
+.mb-7, .my-7 {
+    margin-bottom: 5rem!important;
+}
