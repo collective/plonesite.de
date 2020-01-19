@@ -111,29 +111,16 @@
         </div>
     </div>
 
-    <div class="section section-xxx mb-7">
-        <div class="row mb-3">
-            <div class="col-8 offset-2 text-center">
-                <h2>Projekt X</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+    <div class="section section-provider mb-7"
+         tal:define="providers view/providers"
+         tal:condition="python: view.providers()">
+      <div class="row mb-3">
+        <div class="col-8 offset-2 text-center">
+          <h2>Solution Provider</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
-            </div>
-            <div class="col-md-6">
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.</p>
-            </div>
-        </div>
+      </div>
+      <div tal:replace="structure python:providers.text.output_relative_to(view.context)"> Providers page </div>
     </div>
 
 

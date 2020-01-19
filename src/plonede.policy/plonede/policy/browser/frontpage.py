@@ -73,3 +73,9 @@ class FrontPageView(BrowserView):
                 'start': spell_date(brain.start),
             })
         return results
+
+    def providers(self):
+        portal = api.portal.get()
+        providers_page = portal.get('providers')
+        if providers_page:
+            return providers_page
