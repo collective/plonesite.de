@@ -17,7 +17,7 @@
                 <h1>Das professionelle CMS für Ihr Unternehmen</h1>
                 <p class="lead">Plone ist das perfekte Content-Management-System für Ihr Unternehmen. Es basiert auf
                     Python und legt seinen Schwerpunkt auf Sicherheit und Workflows.</p>
-                <a class="btn btn-primary btn-xl" href="${navroot}/demo">Demo aufrufen</a>
+                <a class="btn btn-primary btn-xl" href="http://demo.plone.org">Demo aufrufen</a>
             </div>
             <div class="col-md-6 px-3">
                 <img src="${navroot}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2" title="Plone 5.2 Screenshot"
