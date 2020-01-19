@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonede.policy">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="plonede.policy.interfaces.IPlonedePolicyLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="plonede.policy"
+      type="plone"
+      directory="static"
+      />
+
+  <browser:page
+      name="frontpage"
+      for="plone.app.contenttypes.interfaces.IDocument"
+      layer="plonede.policy.interfaces.IPlonedePolicyLayer"
+      class=".frontpage.FrontPageView"
+      template="templates/frontpage.pt"
+      permission="zope2.View"
+      />
+
+</configure>

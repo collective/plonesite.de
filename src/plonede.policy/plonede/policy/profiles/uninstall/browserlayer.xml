@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="plonede.policy"
+      interface="plonede.policy.interfaces.IPlonedePolicyLayer"
+      remove="true"
+      />
+</layers>

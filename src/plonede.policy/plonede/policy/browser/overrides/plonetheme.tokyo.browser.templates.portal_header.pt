@@ -1,0 +1,46 @@
+<tal:header xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+  <header id="menu-header" class="active" tal:define="navroot context/@@plone_portal_state/navigation_root_url; logo view/logo; logo_title view/logo_title">
+    <div class="container header-wrapper">
+      <div class="row">
+
+        <div class="col-3">
+          <a class="header-logo" href="${navroot}">
+            <img src="${python:logo if logo else navroot + '/++plone++plonetheme.tokyo/plone_logow.svg'}" alt="${logo_title}" title="${logo_title}">
+          </a>
+        </div>
+
+        <div class="col-8">
+          <nav class="navbar navbar-expand navbar-dark text-right">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="${navroot}">Startseite</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-features">Funktionen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-demo">Demo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-provider">Dienstleister</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-community">Community</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-1">
+          <div class="header-icons">
+            <i id="portaltab-burger-menu" class="glyphicon glyphicon-menu-hamburger"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+</tal:header>

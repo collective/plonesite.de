@@ -1,0 +1,121 @@
+#portal-globalnav-wrapper,
+#portal-colophon,
+#portal-siteactions {
+    display: none;
+}
+
+#portal-slider {
+    padding: 0 0 15px;
+}
+
+.margin {
+    margin-bottom: 30px;
+}
+
+.plonede-box {
+    background: #0083BE;
+    padding: 15px;
+    min-height: 100px;
+}
+
+.plonede-box a {
+    color: white;
+}
+
+.plonede-box a:hover {
+    color: silver;
+}
+
+.languages {
+    list-style: none;
+    padding: 0 0 15px;
+    margin: 0;
+}
+
+.languages li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px 0 0;
+    margin: 0;
+}
+
+.section {
+  margin-bottom: 10rem;
+}
+
+.section-welcome {
+  margin-top: 8rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+}
+
+#news p {
+    color: #666;
+}
+
+#news .news-item {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-left: 0;
+}
+
+#news .news-item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+#news .news-image {
+    padding-left: 0;
+}
+
+#news a h2 {
+    color: #212529;
+}
+
+#news .news-item h2 {
+    padding: 0;
+    font-size: 18px;
+}
+
+#news .news-item .image-left {
+    margin: 0 15px 10px 0;
+}
+
+.navbar {
+    display: none;
+}
+
+#events h5 a {
+    color: #212529;
+}
+
+#events .cal {
+    max-width: 132px;
+}
+
+.event-item {
+    padding-bottom: 10px;
+}
+
+.event-item .month {
+    margin: 0;
+}
+
+.event-item .description {
+    padding-left: 0;
+}
+
+@media(min-width:992px){
+    .navbar {
+        display: block;
+        padding: 1.3rem 0;
+    }
+}
+
+.glyphicon-x2 {
+  font-size: 2rem;
+}

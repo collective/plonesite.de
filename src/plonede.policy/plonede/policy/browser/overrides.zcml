@@ -1,0 +1,12 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="plonede.policy">
+
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <!-- Overrides for Products.CMFPlone -->
+
+</configure>

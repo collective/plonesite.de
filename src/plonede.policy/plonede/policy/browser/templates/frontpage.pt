@@ -1,0 +1,240 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plonede.policy">
+
+<body>
+
+<metal:content-core fill-slot="main">
+
+    <div id="section-welcome" class="section section-welcome">
+        <div class="row" tal:define="navroot context/@@plone_portal_state/navigation_root_url">
+            <div class="col-md-6">
+                <h1>Das professionelle CMS für Ihr Unternehmen</h1>
+                <p class="lead">Plone ist das perfekte Content-Management-System für Ihr Unternehmen. Es basiert auf
+                    Python und legt seinen Schwerpunkt auf Sicherheit und Workflows.</p>
+                <a class="btn btn-primary btn-xl" href="http://demo.plone.org">Demo aufrufen</a>
+            </div>
+            <div class="col-md-6 px-3">
+                <img src="${navroot}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2" title="Plone 5.2 Screenshot"
+                     width="100%;">
+            </div>
+        </div>
+    </div>
+
+    <div id="section-features" class="section section-features">
+        <div class="row mb-3">
+            <div class="col-8 offset-2 text-center">
+                <h2>Features</h2>
+                <p class="lead">Zahlreiche Features sind out of the Box verfügbar und lassen sich je nach Anforderung
+                    konfigurieren. Workflows und die vom BSI in einer Studie belegten, erstklassigen Security runden
+                    den Funktionsumfang ab.</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-list" aria-hidden="true"></span>
+                <h3 class="mb-3">Verwaltung von Inhalten</h3>
+                <p>Die Intuitive und benutzerfreundliche Verwaltung von Inhalten ist der Kern eines jeden CMS.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-heart-empty" aria-hidden="true"></span>
+                <h3>Enterprise Integration</h3>
+                <p>Plone lässt sich nahtlos in eine bestehende IT-Landschaft integrieren.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-check" aria-hidden="true"></span>
+                <h3>Flexible Workflows</h3>
+                <p>Konfigurieren Sie bis ins Detail wie Inhalte erstellt, bearbeitet und veröffentlicht werden.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-lock" aria-hidden="true"></span>
+                <h3>Erstklassige Security</h3>
+                <p>Das BSI bestätigt in einer Studie die hervorragende Sicherheit im Vergleich zu anderen
+                    Content-Management-Systemen.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-plus-sign" aria-hidden="true"></span>
+                <h3>Erweiterbarkeit</h3>
+                <p>Zahlreiche Add-ons erweitern den Funktionsumfang von Plone. Entwicklern stehen unzählige
+                    Python-Bibliotheken zur Verfügung.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-signal" aria-hidden="true"></span>
+                <h3>Skalierbarkeit</h3>
+                <p>Mit Lastverteilung skaliert Plone passend zu Ihren Anforderungen. Caching sorgt für performante
+                    Zugriffe.</p>
+            </div>
+        </div>
+        <div class="col-md-12 text-center">
+            <a href="${portal_url}/features" class="btn btn-primary">Mehr Informationen zu den Features</a>
+        </div>
+    </div>
+
+    <div id="section-demo" class="section section-demo">
+        <div class="row mb-3">
+            <div class="col-8 offset-2 text-center">
+                <h2>Demo</h2>
+                <p class="lead">Hier können Sie Plone und seine Funktionen testen. <br/>Die Inhalte der Demo-Seite wird alle 4 Stunden zurückgesetzt.</p>
+            </div>
+        </div>
+        <div class="row plonede-box">
+            <div class="col-md-6 text-center">
+                <h4>Offizielle Plone 5.2 Demo mit Python 3 <br/>bereitgestellt von der Plone Community</h4>
+                <p><a href="http://demo.plone.org" rel="noopener" target="_blank">http://demo.plone.org</a></p>
+                <ul class="languages">
+                    <li><img alt="Deutsch" src="${portal_url}/++plone++plonede.policy/flag-de.png"/></li>
+                    <li><img alt="English" src="${portal_url}/++plone++plonede.policy/flag-uk.png"/></li>
+                    <li><img alt="Spanish" src="${portal_url}/++plone++plonede.policy/flag-es.png"/></li>
+                    <li><img alt="Euskara" src="${portal_url}/++plone++plonede.policy/flag-eu.png"/></li>
+                </ul>
+            </div>
+            <div class="col-md-6 px-3">
+                <a href="http://demo.plone.org" rel="noopener" target="_blank">
+                    <img src="${portal_url}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2"
+                     title="Plone 5.2 Screenshot" class="image-inline img-fluid" />
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section-provider" class="section section-provider"
+         tal:define="providers view/providers"
+         tal:condition="python: view.providers()">
+      <div class="row mb-3">
+        <div class="col-8 offset-2 text-center">
+          <h2>Plone Dienstleister</h2>
+          <p class="lead">Kontaktieren Sie einen Dienstleister um professionelle Unterstützung zu den Themen Einrichtung, Entwicklung und Betrieb zu erhalten.</p>
+        </div>
+      </div>
+      <div tal:replace="structure python:providers.text.output_relative_to(view.context)"> Providers page </div>
+    </div>
+
+
+    <div id="section-community" class="section section-community">
+        <div class="row mb-3">
+            <div class="col-8 offset-2 text-center">
+                <h2>Community</h2>
+                <p class="lead">Plone wird von einer aktiven internationalen Open Source Community entwickelt. Hier sind die wichtigsten Links zum mitmachen.</p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-4 offset-2">
+                <div class="list-group-flush">
+                  <a href="https://docs.plone.org/" class="list-group-item list-group-item-action">Dokumentation</a>
+                  <a href="https://community.plone.org/" class="list-group-item list-group-item-action">Diskussionsforum und Hilfe</a>
+                  <a href="https://github.com/plone" class="list-group-item list-group-item-action" class="lead">Der Code von Plone auf Github</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="list-group-flush">
+                  <a href="https://training.plone.org/" class="list-group-item list-group-item-action">Trainings: Lernen Sie Plone</a>
+                  <a href="https://plone.com/success-stories.html" class="list-group-item list-group-item-action">Success Stories</a>
+                  <a href="https://plone.com/providers.html" class="list-group-item list-group-item-action">Dienstleister weltweit</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2 text-center">
+                <p>Unter dem Dach der <a href="https://plone.org/foundation">Plone Foundation</a>, einer gemeinnützigen und unabhängigen Stiftung, wird das System seit dem Jahr 2000 aktiv entwickelt und von einer engagierten Community vorangetrieben, die für ihre qualitativ hochwertige Open-Source-Entwicklung bekannt ist.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-news" class="section section-news">
+        <div class="row mb-3">
+            <div class="col-8 offset-2 text-center">
+                <h2>Nachrichten</h2>
+                <p class="lead">Nachrichten aus dem deutschsprachigen Raum rund um das Open-Source Content-Management-System Plone finden Sie hier.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" id="news">
+                <div class="row" tal:define="news python: view.news()">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="featured-news"
+                                 tal:define="item python: news[0]">
+                            <a href="" tal:attributes="href python: item['url']">
+                                <img class="image-inline img-fluid"
+                                     tal:condition="python: item.get('tag', False)"
+                                     tal:replace="structure python: item['tag']"
+                                />
+                                <h2 tal:content="python: item['title']"></h2>
+                                <p tal:content="python: item['description']"></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="row news-item" tal:repeat="item python: news[1:]">
+                            <div class="col-4 news-image">
+                                <a href="" tal:attributes="href python: item['url'];
+                                                           title python: item['description']">
+                                    <img class="image-left img-fluid"
+                                         tal:condition="python: item.get('tag', False)"
+                                         tal:replace="structure python: item['tag']"
+                                    />
+                                </a>
+                            </div>
+                            <div class="col-8 news-description">
+                                <a href="" tal:attributes="href python: item['url'];
+                                                           title python: item['description']">
+                                    <h2 tal:content="python: item['title']"></h2>
+                                    <p tal:content="python: item['description_short']"></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-more"><a href="${portal_url}/nachrichten" class="btn btn-primary pull-right">Alle Nachrichten</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-events" class="section section-events">
+        <div class="row mb-3">
+            <div class="col-8 offset-2 text-center">
+                <h2>Events</h2>
+                <p class="lead">Deutschsprachige Veranstaltungen zu Plone finden Sie in diesem hier. Eine Liste mit allen internationalen Terminen finden Sie auch auf <a href="https://plone.org" title="Plone Community Site">Plone.org</a>.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2" id="events">
+                <div class="event-items">
+                    <div class="row event-item" tal:repeat="item python: view.events()">
+                        <div class="col cal">
+                            <div class="p-2 text-center border">
+                                <p class="h3 p-1 bg-secondary text-white rounded day" tal:content="python: item['start']['day']">19</p>
+                                <p class="month" tal:content="python: item['start']['month_name']">Januar</p>
+                            </div>
+                        </div>
+                        <div class="col description">
+                            <h5 class="mt-0">
+                                <a tal:attributes="href python: item['url']" tal:content="python: item['title']" class="stretched-link"></a>
+                            </h5>
+                            <p tal:content="python: item['description']"></p>
+                        </div>
+                    </div>
+                    <div class="termine-more">
+                        <a href="${portal_url}/termine" class="btn btn-primary pull-right">Alle Termine</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</metal:content-core>
+
+</body>
+</html>

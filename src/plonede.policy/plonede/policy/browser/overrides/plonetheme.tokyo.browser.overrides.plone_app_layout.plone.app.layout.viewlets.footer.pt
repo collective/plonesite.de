@@ -1,0 +1,39 @@
+<div class="page-footer pt-4"
+	 tal:define="navroot context/@@plone_portal_state/navigation_root_url;">
+
+	<div class="container">
+
+		<ul class="list-unstyled list-inline text-center py-2">
+
+			<li class="d-inline p-2">
+				<a href="${navroot}/sitemap">
+				Übersicht
+				</a>
+			</li>
+	
+			<li class="d-inline p-2">
+				<a href="${navroot}/accessibility-info">
+				Barrierefreiheit
+				</a>
+			</li>
+	
+			<li class="d-inline p-2">
+				<a href="${navroot}/contact-info" class="pat-plone-modal" data-pat-plone-modal="{}">
+				Kontakt
+				</a>
+			</li>
+
+			<li class="d-inline p-2">
+				<a href="${navroot}/impressum">
+				Impressum
+				</a>
+			</li>      
+		</ul>
+
+	</div>
+
+	<div class="text-center py-3 mb-4">
+		<a href="http://plone.com" target="_blank" title="Diese Website wird mit dem Open-Source Content-Management-System Plone betrieben.">Powered by Plone &amp; Python</a>
+	</div>
+
+</div>

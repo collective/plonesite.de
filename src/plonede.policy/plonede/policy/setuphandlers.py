@@ -1,10 +1,9 @@
-from Products.CMFCore.utils import getToolByName
+# -*- coding: UTF-8 -*-
 
-def importVarious(context):
-    """Miscellanous steps import handle
-    """
-    if context.readDataFile('plonede.policy_various.txt') is None:
-        return
 
-    portal = context.getSite()
-    # do stuff
+def post_install(context):
+    """After install"""
+
+
+def uninstall(context):
+    """After uninstall"""
