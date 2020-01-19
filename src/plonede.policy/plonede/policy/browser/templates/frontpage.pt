@@ -9,48 +9,107 @@
 
 <body>
 
-  <metal:content-core fill-slot="main">
+<metal:content-core fill-slot="main">
 
     <div class="section section-welcome mb-5">
-      <div class="row" tal:define="navroot context/@@plone_portal_state/navigation_root_url">
-        <div class="col-md-6">
-          <h1>Das professionelle CMS für Ihr Unternehmen</h1>
-          <p class="lead">Plone ist das perfekte Content-Management-System für Ihr Unternehmen. Es basiert auf Python und legt seinen Schwerpunkt auf Sicherheit und Workflows.</p>
-          <a class="btn btn-primary btn-xl" href="${navroot}/demo">Demo aufrufen</a>
+        <div class="row" tal:define="navroot context/@@plone_portal_state/navigation_root_url">
+            <div class="col-md-6">
+                <h1>Das professionelle CMS für Ihr Unternehmen</h1>
+                <p class="lead">Plone ist das perfekte Content-Management-System für Ihr Unternehmen. Es basiert auf
+                    Python und legt seinen Schwerpunkt auf Sicherheit und Workflows.</p>
+                <a class="btn btn-primary btn-xl" href="${navroot}/demo">Demo aufrufen</a>
+            </div>
+            <div class="col-md-6 px-3">
+                <img src="${navroot}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2" title="Plone 5.2 Screenshot"
+                     width="100%;">
+            </div>
         </div>
-        <div class="col-md-6 px-3">
-          <img src="${navroot}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2" title="Plone 5.2 Screenshot" width="100%;">
-        </div>
-      </div>
     </div>
 
-<div class="section section-demo mb-5">
-    <div class="row mb-3">
-        <div class="col-8 offset-2 text-center">
-            <h2>Demo</h2>
-            <p class="lead">Auf diesen Seiten können Sie Plone und seine Funktionen testen. Bitte beachten Sie, dass es sich um
-            Demo-Seiten handelt. Die Inhalte der Seiten werden in regelmäßigen Abständen zurückgesetzt.</p>
-        </div>
-    </div>
-    <div class="row plonede-box">
-        <div class="col-md-6 text-center">
-            <p class="lead">Offizielle Plone 5.2 Demo mit Python 3 <br />bereitgestellt von der Plone Community</p>
-            <p><a href="http://demo.plone.org" rel="noopener" target="_blank">http://demo.plone.org</a></p>
-            <p class="lead">Erweiterungen</p>
-            <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a></p>
-            <ul class="languages">
-                <li><img alt="Deutsch" src="${portal_url}/++plone++plonede.policy/flag-de.png"/></li>
-                <li><img alt="English" src="${portal_url}/++plone++plonede.policy/flag-uk.png"/></li>
-                <li><img alt="Spanish" src="${portal_url}/++plone++plonede.policy/flag-es.png"/></li>
-                <li><img alt="Euskara" src="${portal_url}/++plone++plonede.policy/flag-eu.png"/></li>
-            </ul>
-        </div>
-        <div class="col-md-6 px-3">
-          <img src="${portal_url}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2" title="Plone 5.2 Screenshot" class="image-inline img-fluid" />
+    <div class="frontpage-section section-features mb-5">
+        <div class="row mb-3">
+            <div class="col-8 offset-2 text-center">
+                <h2>Features</h2>
+                <p class="lead">Zahlreiche Features sind out of the Box verfügbar und lassen sich je nach Anforderung
+                    konfigurieren. Workflows und die vom BSI in einer Studie belegten, erstklassigen Security runden
+                    den Funktionsumfang.</p>
+            </div>
         </div>
 
+        <div class="row">
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-list" aria-hidden="true"></span>
+                <h3 class="mb-3">Verwaltung von Inhalten</h3>
+                <p>Die Intuitive und benutzerfreundliche Verwaltung von Inhalten ist der Kern eines jeden CMS.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-heart-empty" aria-hidden="true"></span>
+                <h3>Enterprise Integration</h3>
+                <p>Plone lässt sich nahtlos in eine bestehende IT-Landschaft integrieren.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-check" aria-hidden="true"></span>
+                <h3>Flexible Workflows</h3>
+                <p>Konfigurieren Sie bis ins Detail wie Inhalte erstellt, bearbeitet und veröffentlicht werden.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-lock" aria-hidden="true"></span>
+                <h3>Erstklassige Security</h3>
+                <p>Das BSI bestätigt in einer Studie die hervorragende Sicherheit im Vergleich zu anderen
+                    Content-Management-Systemen.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-plus-sign" aria-hidden="true"></span>
+                <h3>Erweiterbarkeit</h3>
+                <p>Zahlreiche Add-ons erweitern den Funktionsumfang von Plone. Entwicklern stehen unzählige
+                    Python-Bibliotheken zur Verfügung.</p>
+            </div>
+
+            <div class="col-md-4 text-center p-3">
+                <span class="glyphicon glyphicon-x2 mb-3 glyphicon-signal" aria-hidden="true"></span>
+                <h3>Skalierbarkeit</h3>
+                <p>Mit Lastverteilung skaliert Plone passend zu Ihren Anforderungen. Caching sorgt für performante
+                    Zugriffe.</p>
+            </div>
+
+        </div>
     </div>
-</div>
+
+    <div class="section section-demo mb-5">
+        <div class="row mb-3">
+            <div class="col-8 offset-2 text-center">
+                <h2>Demo</h2>
+                <p class="lead">Auf diesen Seiten können Sie Plone und seine Funktionen testen. Bitte beachten Sie, dass
+                    es sich um
+                    Demo-Seiten handelt. Die Inhalte der Seiten werden in regelmäßigen Abständen zurückgesetzt.</p>
+            </div>
+        </div>
+        <div class="row plonede-box">
+            <div class="col-md-6 text-center">
+                <p class="lead">Offizielle Plone 5.2 Demo mit Python 3 <br/>bereitgestellt von der Plone Community</p>
+                <p><a href="http://demo.plone.org" rel="noopener" target="_blank">http://demo.plone.org</a></p>
+                <p class="lead">Erweiterungen</p>
+                <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a>
+                </p>
+                <ul class="languages">
+                    <li><img alt="Deutsch" src="${portal_url}/++plone++plonede.policy/flag-de.png"/></li>
+                    <li><img alt="English" src="${portal_url}/++plone++plonede.policy/flag-uk.png"/></li>
+                    <li><img alt="Spanish" src="${portal_url}/++plone++plonede.policy/flag-es.png"/></li>
+                    <li><img alt="Euskara" src="${portal_url}/++plone++plonede.policy/flag-eu.png"/></li>
+                </ul>
+            </div>
+            <div class="col-md-6 px-3">
+                <img src="${portal_url}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2"
+                     title="Plone 5.2 Screenshot" class="image-inline img-fluid"/>
+            </div>
+
+        </div>
+    </div>
 
     <div class="section section-xxx mb-5">
       <div class="row mb-3">
