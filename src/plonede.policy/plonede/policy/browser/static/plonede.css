@@ -39,10 +39,16 @@
     margin: 0;
 }
 
-#news h2 {
-    font-size: 20px;
-    font-weight: 600;
-    padding: 10px 0 0;
+.section {
+  margin-bottom: 10rem;
+}
+
+.section-welcome {
+  margin-top: 8rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
 }
 
 #news p {
@@ -112,8 +118,4 @@
 
 .glyphicon-x2 {
   font-size: 2rem;
-}
-
-.mb-7, .my-7 {
-    margin-bottom: 5rem!important;
 }

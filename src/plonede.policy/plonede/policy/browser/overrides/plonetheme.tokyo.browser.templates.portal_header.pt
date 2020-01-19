@@ -15,16 +15,16 @@
           <nav class="navbar navbar-expand navbar-dark text-right">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="${navroot}">Home</a>
+                <a class="nav-link" href="${navroot}">Startseite</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="${navroot}/features">Features</a>
+                <a class="nav-link" href="#section-features">Funktionen</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="${navroot}/demo">Demo</a>
+                <a class="nav-link" href="#section-demo">Demo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://plone.com/providers/providers/%40%40search594e.html?Subject%3Alist=country%3A%20Germany">Partner</a>
+                <a class="nav-link" href="https://plone.com/providers/providers/%40%40search594e.html?Subject%3Alist=country%3A%20Germany">Dienstleister</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://plone.org/">Community</a>
