@@ -32,7 +32,7 @@
                 <h2>Features</h2>
                 <p class="lead">Zahlreiche Features sind out of the Box verfügbar und lassen sich je nach Anforderung
                     konfigurieren. Workflows und die vom BSI in einer Studie belegten, erstklassigen Security runden
-                    den Funktionsumfang.</p>
+                    den Funktionsumfang ab.</p>
             </div>
         </div>
 
@@ -76,7 +76,9 @@
                 <p>Mit Lastverteilung skaliert Plone passend zu Ihren Anforderungen. Caching sorgt für performante
                     Zugriffe.</p>
             </div>
-
+        </div>
+        <div class="col-md-12 text-center">
+            <a href="${portal_url}/features" class="btn btn-primary">Mehr Informationen zu den Features</a>
         </div>
     </div>
 
@@ -84,18 +86,13 @@
         <div class="row mb-3">
             <div class="col-8 offset-2 text-center">
                 <h2>Demo</h2>
-                <p class="lead">Auf diesen Seiten können Sie Plone und seine Funktionen testen. Bitte beachten Sie, dass
-                    es sich um
-                    Demo-Seiten handelt. Die Inhalte der Seiten werden in regelmäßigen Abständen zurückgesetzt.</p>
+                <p class="lead">Hier können Sie Plone und seine Funktionen testen. <br/>Die Inhalte der Demo-Seite wird alle 4 Stunden zurückgesetzt.</p>
             </div>
         </div>
         <div class="row plonede-box">
             <div class="col-md-6 text-center">
-                <p class="lead">Offizielle Plone 5.2 Demo mit Python 3 <br/>bereitgestellt von der Plone Community</p>
+                <h4>Offizielle Plone 5.2 Demo mit Python 3 <br/>bereitgestellt von der Plone Community</h4>
                 <p><a href="http://demo.plone.org" rel="noopener" target="_blank">http://demo.plone.org</a></p>
-                <p class="lead">Erweiterungen</p>
-                <p><a href="https://pypi.org/project/plone.app.multilingual/" rel="noopener" target="_blank">plone.app.multilingual</a>
-                </p>
                 <ul class="languages">
                     <li><img alt="Deutsch" src="${portal_url}/++plone++plonede.policy/flag-de.png"/></li>
                     <li><img alt="English" src="${portal_url}/++plone++plonede.policy/flag-uk.png"/></li>
@@ -104,8 +101,10 @@
                 </ul>
             </div>
             <div class="col-md-6 px-3">
-                <img src="${portal_url}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2"
+                <a href="http://demo.plone.org" rel="noopener" target="_blank">
+                    <img src="${portal_url}/++plone++plonede.policy/plone-5-2.png" alt="Plone 5.2"
                      title="Plone 5.2 Screenshot" class="image-inline img-fluid" />
+                </a>
             </div>
 
         </div>
@@ -121,6 +120,37 @@
         </div>
       </div>
       <div tal:replace="structure python:providers.text.output_relative_to(view.context)"> Providers page </div>
+    </div>
+
+
+    <div id="section-community" class="section section-community">
+        <div class="row mb-3">
+            <div class="col-8 offset-2 text-center">
+                <h2>Community</h2>
+                <p class="lead">Plone wird von einer aktiven internationalen Open Source Community entwickelt. Hier sind die wichtigsten Links zum mitmachen.</p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-4 offset-2">
+                <div class="list-group-flush">
+                  <a href="https://docs.plone.org/" class="list-group-item list-group-item-action">Dokumentation</a>
+                  <a href="https://community.plone.org/" class="list-group-item list-group-item-action">Diskussionsforum und Hilfe</a>
+                  <a href="https://github.com/plone" class="list-group-item list-group-item-action" class="lead">Der Code von Plone auf Github</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="list-group-flush">
+                  <a href="https://training.plone.org/" class="list-group-item list-group-item-action">Trainings: Lernen Sie Plone</a>
+                  <a href="https://plone.com/success-stories.html" class="list-group-item list-group-item-action">Success Stories</a>
+                  <a href="https://plone.com/providers.html" class="list-group-item list-group-item-action">Dienstleister weltweit</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2 text-center">
+                <p>Unter dem Dach der <a href="https://plone.org/foundation">Plone Foundation</a>, einer gemeinnützigen und unabhängigen Stiftung, wird das System seit dem Jahr 2000 aktiv entwickelt und von einer engagierten Community vorangetrieben, die für ihre qualitativ hochwertige Open-Source-Entwicklung bekannt ist.</p>
+            </div>
+        </div>
     </div>
 
     <div id="section-news" class="section section-news">

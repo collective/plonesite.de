@@ -19,7 +19,7 @@ class FrontPageView(BrowserView):
         results = []
         brains = api.content.find(
             portal_type='News Item',
-            sort_on='effective',
+            sort_on='created',
             sort_order='reverse',
             review_state='published',
             sort_limit=4,

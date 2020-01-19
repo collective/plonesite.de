@@ -24,10 +24,10 @@
                 <a class="nav-link" href="#section-demo">Demo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://plone.com/providers/providers/%40%40search594e.html?Subject%3Alist=country%3A%20Germany">Dienstleister</a>
+                <a class="nav-link" href="#section-provider">Dienstleister</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://plone.org/">Community</a>
+                <a class="nav-link" href="#section-community">Community</a>
               </li>
             </ul>
           </nav>
