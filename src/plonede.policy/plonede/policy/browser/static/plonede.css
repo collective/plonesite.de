@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #portal-globalnav-wrapper,
 #portal-colophon,
 #portal-siteactions {

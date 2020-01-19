@@ -24,6 +24,7 @@
                      width="100%;">
             </div>
         </div>
+        <a name="features" />
     </div>
 
     <div id="section-features" class="section section-features">
@@ -80,6 +81,7 @@
         <div class="col-md-12 text-center">
             <a href="${portal_url}/features" class="btn btn-primary">Mehr Informationen zu den Features</a>
         </div>
+        <a name="demo" />
     </div>
 
     <div id="section-demo" class="section section-demo">
@@ -108,6 +110,7 @@
             </div>
 
         </div>
+        <a name="provider" />
     </div>
 
     <div id="section-provider" class="section section-provider"
@@ -120,6 +123,7 @@
         </div>
       </div>
       <div tal:replace="structure python:providers.text.output_relative_to(view.context)"> Providers page </div>
+      <a name="community" />
     </div>
 
 
@@ -151,6 +155,7 @@
                 <p>Unter dem Dach der <a href="https://plone.org/foundation">Plone Foundation</a>, einer gemeinnützigen und unabhängigen Stiftung, wird das System seit dem Jahr 2000 aktiv entwickelt und von einer engagierten Community vorangetrieben, die für ihre qualitativ hochwertige Open-Source-Entwicklung bekannt ist.</p>
             </div>
         </div>
+        <a name="news" />
     </div>
 
     <div id="section-news" class="section section-news">
