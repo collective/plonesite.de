@@ -15,8 +15,7 @@
         <div class="row" tal:define="navroot context/@@plone_portal_state/navigation_root_url">
             <div class="col-md-6">
                 <h1>Das professionelle CMS für Ihr Unternehmen</h1>
-                <p class="lead">Plone ist das perfekte Content-Management-System für Ihr Unternehmen. Es basiert auf
-                    Python und legt seinen Schwerpunkt auf Sicherheit und Workflows.</p>
+                <p class="lead">Plone ist das ultimative Enterprise Content-Management-System. Es basiert auf Python, ist 100% Open Source und legt seine Schwerpunkte auf Sicherheit, Workflows und Erweiterbarkeit.</p>
                 <a class="btn btn-primary btn-xl" href="http://demo.plone.org" target="_blank">Demo aufrufen</a>
             </div>
             <div class="col-md-6 px-3">
@@ -32,7 +31,7 @@
             <div class="col-8 offset-2 text-center">
                 <h2>Features</h2>
                 <p class="lead">Zahlreiche Features sind out of the Box verfügbar und lassen sich je nach Anforderung
-                    konfigurieren.</p>
+                    konfigurieren und erweitern.</p>
             </div>
         </div>
 
@@ -47,7 +46,7 @@
             <div class="col-md-4 text-center p-3">
                 <span class="glyphicon glyphicon-x2 mb-3 glyphicon-heart-empty" aria-hidden="true"></span>
                 <h3>Enterprise Integration</h3>
-                <p>Plone lässt sich nahtlos in eine bestehende IT-Landschaft integrieren.</p>
+                <p>Plone fügt sich nahtlos in eine bestehende IT-Landschaft ein. Die REST API erlaubt optimale Integration.</p>
             </div>
 
             <div class="col-md-4 text-center p-3">
@@ -66,8 +65,7 @@
             <div class="col-md-4 text-center p-3">
                 <span class="glyphicon glyphicon-x2 mb-3 glyphicon-plus-sign" aria-hidden="true"></span>
                 <h3>Erweiterbarkeit</h3>
-                <p>Zahlreiche Add-ons erweitern den Funktionsumfang von Plone. Entwicklern stehen unzählige
-                    Python-Bibliotheken zur Verfügung.</p>
+                <p>Zahlreiche Add-ons erweitern den Funktionsumfang von Plone. Die modulare und offene Architektur bietet grenzenlose Erweiterbarkeit.</p>
             </div>
 
             <div class="col-md-4 text-center p-3">
@@ -165,7 +163,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12" id="news">
+            <div class="col-sm-12">
                 <div class="row" tal:define="news python: view.news()">
                     <div class="col-lg-6 col-md-12">
                         <div class="featured-news"
